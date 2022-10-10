@@ -8,18 +8,40 @@ Para isso, iremos trabalhar na criação de um modelo de banco de dados, para at
 Imagine que estamos criando um software que será contratado, em forma de assinatura, por pessoas físicas que desejam controlar 
     e organizar sua vida financeira.
 Logo, teremos um cadastro do **cliente**, com as seguintes informações: (o) representa um campo obrigatório.
-    Nome completo(o), CPF(o), e-mail(o), senha(o), data de nascimento, profissão e gênero. 
-Também é interessante cadastrarmos seu **endereço**. Cada cliente poderá cadastrar somente um endereço, com as seguintes informações:
-    CEP, Rua(o), Número(o), complemento, bairro(o), cidade(o), estado(o), país(o).
-Um cliente poderá ter diversas **contas correntes** cadastradas, com as seguintes informações:
-    Código do banco(o), número da conta(o), agência(o), apelido(o), saldo.
-Para um cliente, não faz sentido ter mais de uma conta corrente com o mesmo número da conta e código do banco.
+1. Nome completo(o) 
+2. CPF(o)
+3. Email(o)
+4. Senha(o)
+5. Data de nascimento
+6. Profissão
+7. Gênero. 
 
+Também é interessante cadastrarmos seu **endereço**. Cada cliente poderá cadastrar somente um endereço, com as seguintes informações:
+1. CEP
+2. Rua(o)
+3. Número(o)
+4. Complemento
+5. Bairro(o)
+6. Cidade(o)
+7. Estado(o)
+8. país(o).
+
+Um cliente poderá ter diversas **contas correntes** cadastradas, com as seguintes informações:
+1. Código do banco(o)
+2. Número da conta(o)
+3. Agência(o)
+4. Apelido(o)
+5. Saldo.
+
+Para um cliente, não faz sentido ter mais de uma conta corrente com o mesmo número da conta e código do banco.
 
 Uma das entidades mais importantes no nosso sistema é a **movimentação financeira**.
 A movimentação financeira possui algumas características, como:
-valor(o), data(o), conta corrente associada a movimentação(o), e ela, movimentação, está associada a uma categoria(o).
-O valor precisa ter 2 casas após a vírgula.
+
+1. Valor(o) com duas casas decimais após a vírgula
+2. Data(o)
+3. A conta corrente é associada a movimentação(o)
+4. Categoria(o)
 
 As **categorias** são criadas pelo nosso cliente, como forma de organização.
 Por exemplo: 
