@@ -47,6 +47,7 @@ As **categorias** são criadas pelo nosso cliente, como forma de organização.
 Por exemplo: 
 O cliente Eduardo, pode criar as categorias: Carro, Alimentação, Lazer, Pet e Moradia.
 A cliente Camilla, pode criar as categorias: Assinaturas de Televisão, Estudo, Livros.
+A categoria precisa ter apenas sua descrição.
 
 ### Criação ###
 
