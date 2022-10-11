@@ -9,14 +9,14 @@ create table cliente (
     email varchar(70),
     senha varchar(50),
     dt_nascimento date,
-    profissao varchar(20),
+    profissao varchar(50),
     genero char(1),
     is_ativo bit(1) not null
 );
 
 create table cidade (
 	id_cidade int auto_increment primary key,
-    cidade varchar(50) not null,
+    nome varchar(50) not null,
     estado varchar(50) not null,
     pais varchar(50) not null
 );
@@ -58,8 +58,10 @@ create table conta (
 
 create table categoria (
 	id_categoria int auto_increment primary key,
+    id_cliente int not null,
     descricao varchar(20) not null,
-    is_ativo bit(1) not null
+    is_ativo bit(1) not null,
+    foreign key (id_cliente) references cliente(id_cliente)
 );
 
 create table movimentacao (
