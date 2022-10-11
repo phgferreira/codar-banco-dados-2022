@@ -22,7 +22,8 @@ insert into cidade (nome, estado, pais) values
 insert into endereco (id_cliente, id_cidade, cep, rua, numero, complemento, bairro) values
 (1, 5, '30688872', 'Avenida Beira Mar', '741', 'Ao lado do restaurante Iracema e Mucuripe', 'Meireles'),
 (3, 8, '20470644', 'Rua das Flores', '214', null, 'XV de Novembro'),
-(2, 2, '20470644', 'Avenida Afonso Pena', '25 B', 'Condominio Chique de Assis apt xxx, bloco D', 'Belvedere');
+(2, 2, '20470644', 'Avenida Afonso Pena', '25 B', 'Condominio Chique de Assis apt xxx, bloco D', 'Belvedere'),
+(5, 2, '20470644', 'Avenida Afonso Pena', '25 B', 'Condominio Chique de Assis apt xxx, bloco D', 'Belvedere');
 
 insert into banco (codigo, nome, is_ativo) values
 ('001', 'Banco do Brasil S.A.', 1),
