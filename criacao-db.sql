@@ -59,7 +59,7 @@ create table conta (
 create table categoria (
 	id_categoria int auto_increment primary key,
     id_cliente int not null,
-    descricao varchar(20) not null,
+    descricao varchar(50) not null,
     is_ativo bit(1) not null,
     foreign key (id_cliente) references cliente(id_cliente)
 );
@@ -67,7 +67,7 @@ create table categoria (
 create table movimentacao (
 	id_movimentacao int auto_increment primary key,
     id_conta int not null,
-    id_categoria int,
+    id_categoria int not null,
     dh_movimentacao datetime,
     valor decimal(15,2) not null,
     foreign key (id_conta) references conta(id_conta),
