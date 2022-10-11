@@ -1,3 +1,5 @@
+use financa_pessoal;
+
 alter table movimentacao add column descricao varchar(100) not null;
 /* ps: E se já tivermos dados inseridos, precisamos ter algum cuidado?
 ** R: O MySQL preenche a coluna descricao com um valor default '' mas
