@@ -26,5 +26,3 @@ alter table movimentacao modify valor decimal(15,4);
 */
  
  select * from movimentacao where descricao = 'teste';
- 
- --delete from movimentacao where descricao = 'teste';
