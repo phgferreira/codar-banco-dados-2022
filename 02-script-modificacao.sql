@@ -11,7 +11,6 @@ alter table movimentacao alter column descricao drop default;
 alter table movimentacao modify valor decimal(15,4);
 /* ps: Extra: E se fossemos diminuir a precisão, digamos de 6 casas
 ** decimais para 4, podemos reduzir a precisão? Se sim, como?
-** R: NÃO ENTENDI A PERGUNTA MUITO BEM.
 */
 
 alter table categoria add column tipo enum ('DESPESA','RECEITA') default 'DESPESA';
