@@ -30,8 +30,8 @@ create table endereco (
     numero varchar(10),
     complemento varchar(150),
     bairro varchar(50),
-    foreign key (id_cliente) references cliente(id_cliente),
-    foreign key (id_cidade) references cidade(id_cidade)
+    foreign key (id_cliente) references cliente(id_cliente) on delete cascade,
+    foreign key (id_cidade) references cidade(id_cidade) on delete cascade
 );
 
 create table banco (
@@ -52,8 +52,8 @@ create table conta (
     apelido varchar(50),
     is_ativo bit(1) not null,
     unique (id_banco, numero),
-    foreign key (id_cliente) references cliente(id_cliente),
-    foreign key (id_banco) references banco(id_banco)
+    foreign key (id_cliente) references cliente(id_cliente) on delete cascade,
+    foreign key (id_banco) references banco(id_banco) on delete cascade
 );
 
 create table categoria (
@@ -61,7 +61,7 @@ create table categoria (
     id_cliente int not null,
     descricao varchar(50) not null,
     is_ativo bit(1) not null,
-    foreign key (id_cliente) references cliente(id_cliente)
+    foreign key (id_cliente) references cliente(id_cliente) on delete cascade
 );
 
 create table movimentacao (
@@ -70,6 +70,6 @@ create table movimentacao (
     id_categoria int not null,
     dh_movimentacao datetime,
     valor decimal(15,2) not null,
-    foreign key (id_conta) references conta(id_conta),
+    foreign key (id_conta) references conta(id_conta) on delete cascade,
     foreign key (id_categoria) references categoria(id_categoria)
 );
